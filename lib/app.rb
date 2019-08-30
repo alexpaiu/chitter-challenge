@@ -1,6 +1,7 @@
 require 'sinatra'
+set :public_folder, 'public'
 class Chitter < Sinatra::Base
   get '/' do
-    "Welcome to Chitter!"
+    erb :index
   end
 end
